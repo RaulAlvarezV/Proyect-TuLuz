@@ -26,6 +26,21 @@ h1{
     font-family: "Dreaming Outloud", sans-serif;
 }
 
+#tituloH1 {
+    color: #849bff;
+    font-size: 12vh;
+    text-align: center;
+    font-family: "Dreaming Outloud", sans-serif;
+}
+
+#tituloH2 {
+    color: #ffa15b;
+    font-size: 8vh;
+    text-align: center;
+    align-self: center;
+    font-family: "Montserrat", sans-serif;
+}
+
 h2{
     font-size: 5vh;
     margin: 7vh;
@@ -237,7 +252,7 @@ p {
 
 }
 
-/* .carousel-control-next, .carousel-control-prev {
+.carousel-control-next, .carousel-control-prev {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -252,17 +267,17 @@ p {
     background: 0 0;
     filter: var(--bs-carousel-control-icon-filter);
     border: 0;
-    /* opacity: .5; */
-    /* background-color: black; */
-    /* transition: opacity .15s ease; 
-}*/
+    opacity: .5;
+    background-color: black;
+    transition: opacity .15s ease; 
+}
 
-/* .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover  {
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover  {
     color: #df0d0d;
     text-decoration: solid;
     outline: 0;
     opacity: .9;
-} */
+}
 
 /* Media Query */
 
