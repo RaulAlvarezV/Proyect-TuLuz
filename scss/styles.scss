@@ -6,6 +6,9 @@
     src: url(../assets/Fonts/dreaming-outloud-script.otf);
 }
 
+$colortituloprincipal: #849bff;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +16,7 @@
 }
 
 h1{
-    color: #849bff;
+    color: $colortituloprincipal;
     font-size: 12vh;
     text-align: center;
     font-family: "Dreaming Outloud", sans-serif;
@@ -67,11 +70,72 @@ p {
 
 header {
     nav {
+        div.menu{
+            display: flex;
+            justify-content: flex-end;
+            justify-content: space-between;
+            font-family: "Poppins", sans-serif;
+            font-size: 3vh;
+            color: black;
+            text-decoration: none;
+            margin: 2vw;
+        
         div.boton_menu {
             display: flex;
             list-style: none;
             align-items: center;
             justify-content: space-around;
+        }
+        }
+    }
+}
+
+header{
+    div{
+        h1.tituloH1{
+            color: $colortituloprincipal;
+            font-size: 12vh;
+            text-align: center;
+            font-family: "Dreaming Outloud", sans-serif;
+        }
+    }
+}
+
+main{
+    section.contenido_ini img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    }
+    section.contenido_ini{
+        display: grid;
+        grid-template-columns: repeat(4, 1.5fr);
+        grid-template-rows: repeat(4, 5fr);
+        grid-template-areas:
+        "texto_soy texto_soy img_deGugui img_deGugui"
+        "texto_soy texto_soy img_deGugui img_deGugui"
+        "img_deGugui2 img_deGugui2 texto_lapsi texto_lapsi"
+        "img_deGugui2 img_deGugui2 texto_lapsi texto_lapsi";
+        width: 85vw;
+        margin: 0 auto;
+        gap: 10px;
+        position: relative;
+        background-color: #fed430;
+        padding: 3vw;
+        justify-content: center;
+        align-items: center;
+        img.img_deGugui{
+            grid-area: img_deGugui;
+        }
+        img.img_deGugui2{
+            grid-area: img_deGugui2;
+        }
+        div.texto_soy {
+            grid-area: texto_soy;
+        }
+        div.texto_lapsi {
+            grid-area: texto_lapsi
         }
     }
 }
