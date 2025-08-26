@@ -4,6 +4,71 @@
   font-family: "Dreaming Outloud";
   src: url(../assets/Fonts/dreaming-outloud-script.otf);
 }
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.jello-horizontal, footer div.jello-horizontal, header div .jello-horizontal {
+  -webkit-animation: jello-horizontal 2s ease-in-out infinite alternate-reverse;
+  animation: jello-horizontal 2s ease-in-out infinite alternate-reverse;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +90,7 @@ h2 {
   text-align: center;
 }
 
-section h2 {
+header section h2 {
   color: #ffa15b;
   font-size: 8vh;
   text-align: center;
@@ -86,7 +151,6 @@ header div h1.tituloH1 {
   text-align: center;
   font-family: "Dreaming Outloud", sans-serif;
 }
-
 main section.contenido_ini img {
   object-fit: contain;
   width: 100%;
@@ -118,6 +182,15 @@ main section.contenido_ini div.texto_soy {
 }
 main section.contenido_ini div.texto_lapsi {
   grid-area: texto_lapsi;
+}
+
+footer h6.firma_desarrollador {
+  text-align: center;
+  color: rgba(81, 81, 202, 0.721);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+footer img.centrada {
+  justify-self: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

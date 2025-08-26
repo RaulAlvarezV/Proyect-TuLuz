@@ -33,13 +33,13 @@ h1{
     font-family: "Dreaming Outloud", sans-serif;
 }
 
-#tituloH2 {
+/* #tituloH2 {
     color: #ffa15b;
     font-size: 8vh;
     text-align: center;
     align-self: center;
     font-family: "Montserrat", sans-serif;
-}
+} */
 
 h2{
     font-size: 5vh;
@@ -128,7 +128,7 @@ p {
     display: flex;
 }
 
-.format_form {
+/* .format_form {
     display: flex;
     margin: 2px;
     font-size: 15px;
@@ -138,7 +138,7 @@ p {
     border-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     font-family: "Poppins", sans-serif;
-}
+} */
 
 .format_form {
     display: flex;

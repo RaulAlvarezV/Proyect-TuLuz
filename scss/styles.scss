@@ -1,13 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ms+Madi&family=Yellowtail&display=swap');
-
 @font-face {
     font-family: "Dreaming Outloud";
     src: url(../assets/Fonts/dreaming-outloud-script.otf);
 }
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
 
 $colortituloprincipal: #849bff;
+$colorsubTituloprincipal: #ffa15b;
 
+.jello-horizontal{
+        -webkit-animation: jello-horizontal 2s ease-in-out infinite alternate-reverse ;
+        animation: jello-horizontal 2s ease-in-out infinite alternate-reverse ;
+}
 
 * {
     margin: 0;
@@ -30,12 +94,17 @@ h2{
     text-align: center;
 }
 
-section h2 {
-    color: #ffa15b;
-    font-size: 8vh;
-    text-align: center;
-    align-self: center;
-    font-family: "Montserrat", sans-serif;
+header{
+    section{
+        h2 {
+        color: $colorsubTituloprincipal;
+        font-size: 8vh;
+        text-align: center;
+        align-self: center;
+        font-family: "Montserrat", sans-serif;
+        }
+    }
+ 
 }
 
 h3{
@@ -98,6 +167,10 @@ header{
             text-align: center;
             font-family: "Dreaming Outloud", sans-serif;
         }
+        .jello-horizontal{
+            @extend .jello-horizontal;
+        }
+        
     }
 }
 
@@ -137,5 +210,20 @@ main{
         div.texto_lapsi {
             grid-area: texto_lapsi
         }
+    }
+}
+
+footer{
+    h6.firma_desarrollador{
+        text-align: center; color: rgba(81, 81, 202, 0.721); font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    div.jello-horizontal{
+        @extend .jello-horizontal;
+    }
+
+    img.centrada {
+    justify-self: center;
+
     }
 }
