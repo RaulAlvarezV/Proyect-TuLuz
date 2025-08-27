@@ -67,6 +67,7 @@
 
 $colortituloprincipal: #849bff;
 $colorsubTituloprincipal: #ffa15b;
+$colorfondoform: #fed430;
 
 @mixin contenido_ini {
     object-fit: contain;
@@ -230,5 +231,30 @@ footer{
     img.centrada {
     justify-self: center;
 
+    }
+}
+
+main {
+    section.form_contac {
+    display: grid;
+    grid-template-columns: 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nnombre"
+    "aapellido"
+    "mail"
+    "tel"
+    "consul"
+    "boton_enviar";
+    width: 35vw;
+    margin: 0 auto;
+    position: relative;
+    background-color: $colorfondoform;
+    place-items: center;
+    place-content: stretch;
+
+        div.nnombre {
+
+        } 
     }
 }
