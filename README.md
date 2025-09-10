@@ -5,11 +5,11 @@
 
 Es un proyecto pensado para la página profesional de una Psicologa que busca hacer clínica online, además tiene una sección donde se muestra el contenido realizado en distintas plataformas.
 
-- 🌱 Estoy aprendiendo sobre **Desarrollo Web**
+- 🌱 Estoy aprendiendo sobre **Desarrollo Web** utilizando HTML y CSS
 
-- 📫 Contáctame en **raul202@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
+📫 Contáctame en **raul202@gmail.com**
 </p>
 
