@@ -1,36 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Yellowtail&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ms+Madi&family=Yellowtail&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&family=Yellowtail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ms+Madi&family=Yellowtail&display=swap");
 @font-face {
-    font-family: "Dreaming Outloud";
-    src: url(../assets/Fonts/dreaming-outloud-script.otf);
+  font-family: "Dreaming Outloud";
+  src: url(../assets/Fonts/dreaming-outloud-script.otf);
 }
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.logo{
-    width: 20vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+.logo {
+  width: 20vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
-h1{
-    color: #849bff;
-    font-size: 12vh;
-    text-align: center;
-    font-family: "Dreaming Outloud", sans-serif;
+h1 {
+  color: #849bff;
+  font-size: 12vh;
+  text-align: center;
+  font-family: "Dreaming Outloud", sans-serif;
 }
 
 #tituloH1 {
-    color: #849bff;
-    font-size: 12vh;
-    text-align: center;
-    font-family: "Dreaming Outloud", sans-serif;
+  color: #849bff;
+  font-size: 12vh;
+  text-align: center;
+  font-family: "Dreaming Outloud", sans-serif;
 }
 
 /* #tituloH2 {
@@ -40,92 +37,87 @@ h1{
     align-self: center;
     font-family: "Montserrat", sans-serif;
 } */
-
-h2{
-    font-size: 5vh;
-    margin: 7vh;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: underline;
-    text-align: center;
+h2 {
+  font-size: 5vh;
+  margin: 7vh;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+  text-align: center;
 }
 
 section h2 {
-    color: #ffa15b;
-    font-size: 8vh;
-    text-align: center;
-    align-self: center;
-    font-family: "Montserrat", sans-serif;
+  color: #ffa15b;
+  font-size: 8vh;
+  text-align: center;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
 }
 
-h3{
-    font-size: 40px;
-    margin: 30px;
-    font-family: "Ms Madi", cursive;
-    text-decoration: underline;
+h3 {
+  font-size: 40px;
+  margin: 30px;
+  font-family: "Ms Madi", cursive;
+  text-decoration: underline;
 }
 
 section h6 {
-    font-size: 1vw;
-    margin: 20px;
-    text-decoration-style: solid;
-    text-decoration-line: underline;
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 10px;
-    padding: 10px;
+  font-size: 1vw;
+  margin: 20px;
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 body {
-    background-color: #fffcf7;
+  background-color: #fffcf7;
 }
 
 p {
-    margin: 30px;
-    font-size: 3vh;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 300;
+  margin: 30px;
+  font-size: 3vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 300;
 }
 
 .centrada {
-    justify-self: center;
-
+  justify-self: center;
 }
 
 .menu {
-    display: flex;
-    justify-content: flex-end;
-    justify-content: space-between;
-    font-family: "Poppins", sans-serif;
-    font-size: 3vh;
-    color: black;
-    text-decoration: none;
-    margin: 2vw;
-
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+  color: black;
+  text-decoration: none;
+  margin: 2vw;
 }
 
 .boton_menu {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-around;
-
-
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
 }
 
 #alinear_txtimg {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 35px;
-    align-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 35px;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .contacto {
-    font-family: "Poppins", sans-serif;
-    display: flex;
+  font-family: "Poppins", sans-serif;
+  display: flex;
 }
 
 /* .format_form {
@@ -139,161 +131,138 @@ p {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     font-family: "Poppins", sans-serif;
 } */
-
 .format_form {
-    display: flex;
-    margin: 2px;
-    font-size: 15px;
-    text-decoration: none;
-    padding: 5px;
-    border: 1px solid rgb(164, 11, 11);
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    font-family: "Poppins", sans-serif;
+  display: flex;
+  margin: 2px;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid rgb(164, 11, 11);
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
 }
 
 .contenido_ini {
-    display: grid;
-    grid-template-columns: repeat(4, 1.5fr);
-    grid-template-rows: repeat(4, 5fr);
-    grid-template-areas:
-    "texto_soy texto_soy img_deGugui img_deGugui"
-    "texto_soy texto_soy img_deGugui img_deGugui"
-    "img_deGugui2 img_deGugui2 texto_lapsi texto_lapsi"
-    "img_deGugui2 img_deGugui2 texto_lapsi texto_lapsi";
-    width: 85vw;
-    margin: 0 auto;
-    gap: 10px;
-    position: relative;
-    background-color: #fed430;
-    padding: 3vw;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1.5fr);
+  grid-template-rows: repeat(4, 5fr);
+  grid-template-areas: "texto_soy texto_soy img_deGugui img_deGugui" "texto_soy texto_soy img_deGugui img_deGugui" "img_deGugui2 img_deGugui2 texto_lapsi texto_lapsi" "img_deGugui2 img_deGugui2 texto_lapsi texto_lapsi";
+  width: 85vw;
+  margin: 0 auto;
+  gap: 10px;
+  position: relative;
+  background-color: #fed430;
+  padding: 3vw;
+  justify-content: center;
+  align-items: center;
 }
 
-.contenido_ini img{
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    min-height: 0;
+.contenido_ini img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
 }
 
 .contenido_ini .texto_soy {
-    grid-area: texto_soy;
+  grid-area: texto_soy;
 }
 
 .contenido_ini .texto_lapsi {
-    grid-area: texto_lapsi;
+  grid-area: texto_lapsi;
 }
 
 .contenido_ini .img_deGugui {
-    grid-area: img_deGugui;
+  grid-area: img_deGugui;
 }
 
 .contenido_ini .img_deGugui2 {
-    grid-area: img_deGugui2;
+  grid-area: img_deGugui2;
 }
 
 .form_contac {
-    display: grid;
-    grid-template-columns: 1.5fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "nnombre"
-    "aapellido"
-    "mail"
-    "tel"
-    "consul"
-    "boton_enviar";
-    width: 35vw;
-    margin: 0 auto;
-    position: relative;
-    background-color: #fed430;
-    place-items: center;
-    place-content: stretch;
+  display: grid;
+  grid-template-columns: 1.5fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nnombre" "aapellido" "mail" "tel" "consul" "boton_enviar";
+  width: 35vw;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fed430;
+  place-items: center;
+  place-content: stretch;
 }
 
-.form_contac .nnombre{
-    grid-area: nnombre;   
+.form_contac .nnombre {
+  grid-area: nnombre;
 }
 
-.form_contac .aapellido{
-    grid-area: aapellido;
-
+.form_contac .aapellido {
+  grid-area: aapellido;
 }
 
-.form_contac .mail{
-    grid-area: mail;
+.form_contac .mail {
+  grid-area: mail;
 }
 
-.form_contac .tel{
-    grid-area: tel;
+.form_contac .tel {
+  grid-area: tel;
 }
 
-.form_contac .consul{
-    grid-area: consul;
+.form_contac .consul {
+  grid-area: consul;
 }
 
-.form_contac .boton_enviar{
-    grid-area: boton_ enviar;
-    
+.form_contac .boton_enviar {
+  grid-area: boton_ enviar;
 }
 
-.form_contac .boton_enviar input[type="submit"] {
-    width: 5vw;
-    height: 5vh;
-    font-size: 3vh;
-    margin: 1vw;
-
+.form_contac .boton_enviar input[type=submit] {
+  width: 5vw;
+  height: 5vh;
+  font-size: 3vh;
+  margin: 1vw;
 }
 
-.form_contac .consul input[type="text"] {
-    width: max-content;
-
+.form_contac .consul input[type=text] {
+  width: max-content;
 }
 
 .carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 15%;
-    padding: 0;
-    color: #d80a0a;
-    text-align: center;
-    background: 0 0;
-    filter: var(--bs-carousel-control-icon-filter);
-    border: 0;
-    opacity: .5;
-    background-color: black;
-    transition: opacity .15s ease; 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #d80a0a;
+  text-align: center;
+  background: 0 0;
+  filter: var(--bs-carousel-control-icon-filter);
+  border: 0;
+  opacity: 0.5;
+  background-color: black;
+  transition: opacity 0.15s ease;
 }
 
-.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover  {
-    color: #df0d0d;
-    text-decoration: solid;
-    outline: 0;
-    opacity: .9;
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+  color: #df0d0d;
+  text-decoration: solid;
+  outline: 0;
+  opacity: 0.9;
 }
 
 /* Media Query */
-
 @media screen and (max-width: 768px) {
-    
-.form_contac {
+  .form_contac {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas:
-    "nnombre"
-    "aapellido"
-    "mail"
-    "tel"
-    "consul"
-    "boton_enviar";
+    grid-template-areas: "nnombre" "aapellido" "mail" "tel" "consul" "boton_enviar";
     width: 80%;
     margin: 0 auto;
     position: relative;
@@ -302,45 +271,39 @@ p {
     place-items: center;
     place-content: stretch;
     align-items: start;
-}
-
-.form_contac .boton_enviar input[type="submit"] {
+  }
+  .form_contac .boton_enviar input[type=submit] {
     width: auto;
     height: auto;
     font-size: 2vh;
-}
-
-h1{
+  }
+  h1 {
     color: #849bff;
     font-size: 8vh;
     text-align: center;
     font-family: "Dreaming Outloud", sans-serif;
-}
-
-h2{
+  }
+  h2 {
     font-size: 5vh;
     margin: 4vh;
     font-family: "Montserrat", sans-serif;
     text-decoration: underline;
     text-align: center;
-}
-
-section h2 {
+  }
+  section h2 {
     color: #ffa15b;
     font-size: 5vh;
     text-align: center;
     align-self: center;
     font-family: "Montserrat", sans-serif;
-}
-
-h3{
+  }
+  h3 {
     font-size: 40px;
     margin: 30px;
     font-family: "Ms Madi", cursive;
     text-decoration: underline;
-}
-
-section h6 {
+  }
+  section h6 {
     font-size: 1vw;
     margin: 20px;
     text-decoration-style: solid;
@@ -350,21 +313,12 @@ section h6 {
     border-style: solid;
     border-radius: 10px;
     padding: 10px;
-}
-
-.contenido_ini {
+  }
+  .contenido_ini {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas:
-    "img_deGugui img_deGugui"
-    "img_deGugui img_deGugui"
-    "texto_soy texto_soy" 
-    "texto_soy texto_soy" 
-    "img_deGugui2 img_deGugui2" 
-    "img_deGugui2 img_deGugui2" 
-    "texto_lapsi texto_lapsi"
-    "texto_lapsi texto_lapsi";
+    grid-template-areas: "img_deGugui img_deGugui" "img_deGugui img_deGugui" "texto_soy texto_soy" "texto_soy texto_soy" "img_deGugui2 img_deGugui2" "img_deGugui2 img_deGugui2" "texto_lapsi texto_lapsi" "texto_lapsi texto_lapsi";
     width: 90%;
     margin: 0 auto;
     gap: 10px;
@@ -373,16 +327,14 @@ section h6 {
     padding: 3vw;
     justify-content: center;
     align-items: center;
-}
-
-.contenido_ini img{
-    object-fit:contain ;
+  }
+  .contenido_ini img {
+    object-fit: contain;
     width: 90%;
     height: 90%;
     min-height: 0;
-}
-
-.menu {
+  }
+  .menu {
     display: flex;
     justify-content: flex-end;
     justify-content: space-between;
@@ -391,7 +343,8 @@ section h6 {
     color: black;
     text-decoration: none;
     margin: 2vw;
-
+  }
 }
 
-}
+
+/*# sourceMappingURL=estilos.css.map */
