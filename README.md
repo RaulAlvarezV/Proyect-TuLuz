@@ -3,6 +3,12 @@
 
 - 🔭 Actualmente estoy trabajando en [Proyecto: PsicoTuLuz](https://github.com/RaulAlvarezV/Proyect-TuLuz.git)
 
+Este protecto esta subido a:
+
+Netlify: https://proyect-tuluz.netlify.app/
+
+Vercel: https://proyect-tu-luz.vercel.app/
+
 Es un proyecto pensado para la página profesional de una Psicologa que busca hacer clínica online, además tiene una sección donde se muestra el contenido realizado en distintas plataformas.
 
 - 🌱 Estoy aprendiendo sobre **Desarrollo Web** utilizando HTML y CSS
