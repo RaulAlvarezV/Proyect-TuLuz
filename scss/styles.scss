@@ -26,10 +26,45 @@
   100% { transform: scale3d(1, 1, 1); }
 }
 
+@-webkit-keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
 
 $colortituloprincipal: #849bff;
 $colorsubTituloprincipal: #ffa15b;
 $colorfondoform: #fed430;
+$colorfondoprincipal: #fffcf7;
 
 
 @mixin carousel-control {
@@ -85,10 +120,15 @@ header div h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 3rem;
   margin: 30px;
   font-family: "Ms Madi", cursive;
   text-decoration: underline;
+}
+
+.focus-in-expand-fwd {
+	-webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 section h6 {
@@ -101,7 +141,7 @@ section h6 {
 }
 
 body {
-  background-color: #fffcf7;
+  background-color: $colorfondoprincipal;
 }
 
 p {
@@ -142,7 +182,7 @@ section.contenido_ini {
   .texto_soy,
   .texto_lapsi {
     p {
-      font-size: 1.05rem;
+      font-size: 1.5rem;
       line-height: 1.7;
       margin-bottom: 1rem;
       font-family: "Montserrat", sans-serif;
@@ -234,19 +274,48 @@ main section.form_contac {
 }
 
 
-main {
-  button.carousel-control-prev { @include carousel-control; }
-  button.carousel-control-next { @include carousel-control; }
 
-  .carousel-control-next:focus,
-  .carousel-control-next:hover,
-  .carousel-control-prev:focus,
-  .carousel-control-prev:hover {
-    color: #df0d0d;
-    outline: 0;
-    opacity: .9;
+#carouselExampleDark {
+  .carousel-inner {
+    text-align: center;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    top: 50%;
+    opacity: 1;
+    filter: none; 
+    z-index: 2;
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: $colortituloprincipal; 
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-size: 100% 100%;
+    }
+  }
+
+  .carousel-indicators {
+    bottom: -70px;
+
+    button {
+      background-color: $colorsubTituloprincipal;
+      opacity: 0.7;
+
+      &.active {
+        background-color: $colortituloprincipal;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 }
+
 
 .custom-navbar {
   background-color: $colorsubTituloprincipal;
@@ -261,11 +330,11 @@ main {
     transition: all 0.3s ease;
 
     &.active {
-      color: $colortituloprincipal;
+      color: #000;
     }
 
     &:hover {
-      color: $colorsubTituloprincipal;
+      color: $colortituloprincipal;
       text-decoration: underline;
     }
   }
@@ -276,16 +345,6 @@ main {
   font-weight: 500;
   transition: color 0.2s ease;
 }
-
-@media (max-width: 991px) {
-  .custom-navbar {
-    .nav-link {
-      margin: 0.5rem 0;
-      text-align: center;
-    }
-  }
-}
-
 
 @media screen and (max-width: 768px) {
   .form_contac {
@@ -324,6 +383,33 @@ main {
     p {
       font-size: 0.95rem;
       line-height: 1.5;
+    }
+  }
+
+  #carouselExampleDark {
+    .carousel-inner {
+      h3 {
+        font-size: 1.2rem; // títulos más pequeños en móvil
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 7%; // controles un poco más grandes en móvil
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .carousel-indicators {
+      bottom: -50px; // indicadores más cercanos al carousel
+      button {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 }

@@ -50,6 +50,40 @@
     transform: scale3d(1, 1, 1);
   }
 }
+@-webkit-keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-800px);
+    transform: translateZ(-800px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
 .jello-horizontal {
   animation: jello-horizontal 2s ease-in-out infinite alternate-reverse;
 }
@@ -83,10 +117,15 @@ header div h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 3rem;
   margin: 30px;
   font-family: "Ms Madi", cursive;
   text-decoration: underline;
+}
+
+.focus-in-expand-fwd {
+  -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 section h6 {
@@ -137,7 +176,7 @@ section.contenido_ini img {
 }
 section.contenido_ini .texto_soy p,
 section.contenido_ini .texto_lapsi p {
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   line-height: 1.7;
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
@@ -226,47 +265,39 @@ main section.form_contac div.boton_enviar input[type=submit] {
   margin: 1vw;
 }
 
-main button.carousel-control-prev {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
-  padding: 0;
-  color: #d80a0a;
-  background: none;
-  border: 0;
-  opacity: 0.5;
-  background-color: black;
-  transition: opacity 0.15s ease;
+#carouselExampleDark .carousel-inner {
+  text-align: center;
 }
-main button.carousel-control-next {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15%;
-  padding: 0;
-  color: #d80a0a;
-  background: none;
-  border: 0;
-  opacity: 0.5;
-  background-color: black;
-  transition: opacity 0.15s ease;
+#carouselExampleDark .carousel-control-prev,
+#carouselExampleDark .carousel-control-next {
+  width: 5%;
+  top: 50%;
+  opacity: 1;
+  filter: none;
+  z-index: 2;
 }
-main .carousel-control-next:focus,
-main .carousel-control-next:hover,
-main .carousel-control-prev:focus,
-main .carousel-control-prev:hover {
-  color: #df0d0d;
-  outline: 0;
-  opacity: 0.9;
+#carouselExampleDark .carousel-control-prev .carousel-control-prev-icon,
+#carouselExampleDark .carousel-control-prev .carousel-control-next-icon,
+#carouselExampleDark .carousel-control-next .carousel-control-prev-icon,
+#carouselExampleDark .carousel-control-next .carousel-control-next-icon {
+  background-color: #849bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+}
+#carouselExampleDark .carousel-indicators {
+  bottom: -70px;
+}
+#carouselExampleDark .carousel-indicators button {
+  background-color: #ffa15b;
+  opacity: 0.7;
+}
+#carouselExampleDark .carousel-indicators button.active {
+  background-color: #849bff;
+}
+#carouselExampleDark .carousel-indicators button:hover {
+  opacity: 1;
 }
 
 .custom-navbar {
@@ -282,10 +313,10 @@ main .carousel-control-prev:hover {
   transition: all 0.3s ease;
 }
 .custom-navbar .nav-link.active {
-  color: #849bff;
+  color: #000;
 }
 .custom-navbar .nav-link:hover {
-  color: #ffa15b;
+  color: #849bff;
   text-decoration: underline;
 }
 
@@ -295,12 +326,6 @@ main .carousel-control-prev:hover {
   transition: color 0.2s ease;
 }
 
-@media (max-width: 991px) {
-  .custom-navbar .nav-link {
-    margin: 0.5rem 0;
-    text-align: center;
-  }
-}
 @media screen and (max-width: 768px) {
   .form_contac {
     width: 80%;
@@ -334,6 +359,27 @@ main .carousel-control-prev:hover {
   section.contenido_ini p {
     font-size: 0.95rem;
     line-height: 1.5;
+  }
+  #carouselExampleDark .carousel-inner h3 {
+    font-size: 1.2rem;
+  }
+  #carouselExampleDark .carousel-control-prev,
+  #carouselExampleDark .carousel-control-next {
+    width: 7%;
+  }
+  #carouselExampleDark .carousel-control-prev .carousel-control-prev-icon,
+  #carouselExampleDark .carousel-control-prev .carousel-control-next-icon,
+  #carouselExampleDark .carousel-control-next .carousel-control-prev-icon,
+  #carouselExampleDark .carousel-control-next .carousel-control-next-icon {
+    width: 30px;
+    height: 30px;
+  }
+  #carouselExampleDark .carousel-indicators {
+    bottom: -50px;
+  }
+  #carouselExampleDark .carousel-indicators button {
+    width: 10px;
+    height: 10px;
   }
 }
 
