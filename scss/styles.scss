@@ -7,25 +7,6 @@
 }
 
 
-@-webkit-keyframes jello-horizontal {
-  0% { transform: scale3d(1, 1, 1); }
-  30% { transform: scale3d(1.25, 0.75, 1); }
-  40% { transform: scale3d(0.75, 1.25, 1); }
-  50% { transform: scale3d(1.15, 0.85, 1); }
-  65% { transform: scale3d(0.95, 1.05, 1); }
-  75% { transform: scale3d(1.05, 0.95, 1); }
-  100% { transform: scale3d(1, 1, 1); }
-}
-@keyframes jello-horizontal {
-  0% { transform: scale3d(1, 1, 1); }
-  30% { transform: scale3d(1.25, 0.75, 1); }
-  40% { transform: scale3d(0.75, 1.25, 1); }
-  50% { transform: scale3d(1.15, 0.85, 1); }
-  65% { transform: scale3d(0.95, 1.05, 1); }
-  75% { transform: scale3d(1.05, 0.95, 1); }
-  100% { transform: scale3d(1, 1, 1); }
-}
-
 @-webkit-keyframes focus-in-expand-fwd {
   0% {
     letter-spacing: -0.5em;
@@ -85,11 +66,6 @@ $colorfondoprincipal: #fffcf7;
   transition: opacity .15s ease;
 }
 
-.jello-horizontal {
-  animation: jello-horizontal 2s ease-in-out infinite alternate-reverse;
-}
-
-
 * {
   margin: 0;
   padding: 0;
@@ -99,13 +75,13 @@ $colorfondoprincipal: #fffcf7;
 
 h1 {
   color: $colortituloprincipal;
-  font-size: 12vh;
+  font-size: 5rem;
   text-align: center;
   font-family: "Dreaming Outloud", sans-serif;
 }
 
 h2 {
-  font-size: 5vh;
+  font-size: 3rem;
   margin: 7vh;
   font-family: "Montserrat", sans-serif;
   text-decoration: underline;
@@ -114,7 +90,7 @@ h2 {
 
 header div h2 {
   color: $colorsubTituloprincipal;
-  font-size: 8vh;
+  font-size: 2.5rem;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
@@ -146,14 +122,14 @@ body {
 
 p {
   margin: 30px;
-  font-size: 3vh;
+  font-size: 1.5rem;
   font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
   font-weight: 300;
 }
 
 header .tituloH1 {
   color: $colortituloprincipal;
-  font-size: 12vh;
+  font-size: 3rem;
   text-align: center;
   font-family: "Dreaming Outloud", sans-serif;
 }
@@ -362,17 +338,17 @@ main section.form_contac {
 
   h1 {
     color: $colortituloprincipal;
-    font-size: 8vh;
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 5vh;
+    font-size: 2rem;
     margin: 4vh;
   }
 
-  section h2 {
+  div h2 {
     color: $colorsubTituloprincipal;
-    font-size: 5vh;
+    font-size: 2rem;
   }
 
   section.contenido_ini {
@@ -386,16 +362,21 @@ main section.form_contac {
     }
   }
 
+  .carousel-inner {
+    text-align: center;
+    max-width: 80%;
+  }
+
   #carouselExampleDark {
     .carousel-inner {
       h3 {
-        font-size: 1.2rem; // títulos más pequeños en móvil
+        font-size: 1.2rem;
       }
     }
 
     .carousel-control-prev,
     .carousel-control-next {
-      width: 7%; // controles un poco más grandes en móvil
+      width: 7%;
 
       .carousel-control-prev-icon,
       .carousel-control-next-icon {
@@ -405,7 +386,7 @@ main section.form_contac {
     }
 
     .carousel-indicators {
-      bottom: -50px; // indicadores más cercanos al carousel
+      bottom: -50px;
       button {
         width: 10px;
         height: 10px;
