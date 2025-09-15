@@ -4,7 +4,7 @@
   font-family: "Dreaming Outloud";
   src: url(../assets/Fonts/dreaming-outloud-script.otf);
 }
-h3, header div h2, h2, h1 {
+header div h2, h3, h2, h1 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
@@ -82,6 +82,16 @@ h3, header div h2, h2, h1 {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fffcf7;
+}
+body p {
+  margin: 30px;
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+
 h1 {
   color: #849bff;
   font-size: 5rem;
@@ -92,11 +102,6 @@ h2 {
   font-size: 2rem;
   margin: 7vh;
   text-decoration: underline;
-}
-
-header div h2 {
-  color: #ffa15b;
-  font-size: 2.5rem;
 }
 
 h3 {
@@ -119,25 +124,6 @@ section h6 {
   padding: 10px;
   text-decoration: underline;
 }
-
-body {
-  background-color: #fffcf7;
-}
-
-p {
-  margin: 30px;
-  font-size: 1.5rem;
-  font-family: "Lucida Sans", Geneva, Verdana, sans-serif;
-  font-weight: 300;
-}
-
-header .tituloH1 {
-  color: #849bff;
-  font-size: 3rem;
-  text-align: center;
-  font-family: "Dreaming Outloud", sans-serif;
-}
-
 section.contenido_ini {
   background-color: #fed430;
   padding: 5%;
@@ -153,12 +139,24 @@ section.contenido_ini img {
   height: auto;
 }
 section.contenido_ini .texto_soy p,
-section.contenido_ini .texto_lapsi p, section.contenido_ini .texto_recorrer p {
+section.contenido_ini .texto_lapsi p,
+section.contenido_ini .texto_recorrer p {
   font-size: 1.5rem;
   line-height: 1.7;
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+}
+
+header div h2 {
+  color: #ffa15b;
+  font-size: 2.5rem;
+}
+header .tituloH1 {
+  color: #849bff;
+  font-size: 3rem;
+  text-align: center;
+  font-family: "Dreaming Outloud", sans-serif;
 }
 
 .custom-footer h4 {
@@ -179,12 +177,10 @@ section.contenido_ini .texto_lapsi p, section.contenido_ini .texto_recorrer p {
 .btn-social:hover {
   transform: scale(1.1);
 }
-
-.instagram {
+.btn-social.instagram {
   background-color: #e1306c;
 }
-
-.tiktok {
+.btn-social.tiktok {
   background-color: #000;
 }
 
@@ -197,6 +193,9 @@ section.contenido_ini .texto_lapsi p, section.contenido_ini .texto_recorrer p {
 #carouselExampleDark .carousel-inner {
   text-align: center;
   padding: 5%;
+}
+#carouselExampleDark .carousel-inner h3 {
+  font-size: 1.2rem;
 }
 #carouselExampleDark .carousel-control-prev,
 #carouselExampleDark .carousel-control-next {
@@ -322,7 +321,6 @@ section.contenido_ini .texto_lapsi p, section.contenido_ini .texto_recorrer p {
     font-size: 2vh;
   }
   h1 {
-    color: #849bff;
     font-size: 4rem;
   }
   h2 {
@@ -330,7 +328,6 @@ section.contenido_ini .texto_lapsi p, section.contenido_ini .texto_recorrer p {
     margin: 2rem 0;
   }
   header div h2 {
-    color: #ffa15b;
     font-size: 1.5rem;
   }
   section.contenido_ini {
@@ -347,9 +344,6 @@ section.contenido_ini .texto_lapsi p, section.contenido_ini .texto_recorrer p {
     text-align: center;
     margin: 0 auto;
     max-width: 90%;
-  }
-  #carouselExampleDark .carousel-inner h3 {
-    font-size: 1.2rem;
   }
   #carouselExampleDark .carousel-control-prev,
   #carouselExampleDark .carousel-control-next {
