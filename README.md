@@ -5,9 +5,9 @@
 
 Este protecto esta subido a:
 
-Netlify: https://proyect-tuluz.netlify.app/
-
 Vercel: https://proyect-tu-luz.vercel.app/
+
+Netlify: https://proyect-tuluz.netlify.app/ (Production deploys have been paused due to exceeded credit limits)
 
 Es un proyecto pensado para la página profesional de una Psicologa que busca hacer clínica online, además tiene una sección donde se muestra el contenido realizado en distintas plataformas.
 
